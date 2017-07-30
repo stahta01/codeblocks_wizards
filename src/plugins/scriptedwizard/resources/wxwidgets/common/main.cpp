@@ -15,6 +15,9 @@
 #pragma hdrstop
 #endif //__BORLANDC__
 
+[IF NONE]#ifndef WX_PRECOMP
+#endif[ENDIF NONE]
+
 #include "[FILENAME_PREFIX]Main.h"
 
 //helper functions

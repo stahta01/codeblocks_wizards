@@ -955,6 +955,7 @@ function SetupTarget(target, is_debug)
     {
         local libdir = LibPath + _T("/msw$(WX_SUFFIX)");
 
+        target.SetOptionRelation(ortIncludeDirs, orPrependToParentOptions);
         if (is_debug && !IsPartialDebug)
         {
             target.AddIncludeDir(libdir + _T("d"));
